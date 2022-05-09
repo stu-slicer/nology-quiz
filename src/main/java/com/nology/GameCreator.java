@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Responsible for creating a new {@link QuizGame}.
+ */
 public class GameCreator {
 
     private QuestionLoader loader;

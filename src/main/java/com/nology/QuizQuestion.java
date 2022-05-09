@@ -1,6 +1,7 @@
 package com.nology;
 
 import java.util.List;
+import java.util.Objects;
 
 public class QuizQuestion {
 
@@ -59,6 +60,10 @@ public class QuizQuestion {
         this.genre = genre;
     }
 
+    public boolean markQuestion(int answer) {
+        return this.answer == answer;
+    }
+
     /**
      * Create with everything apart from answer explanation.
      * @param question
@@ -72,9 +77,38 @@ public class QuizQuestion {
      * @return
      */
     public static QuizQuestion create(String question, String option0, String option1, String option2, String option3, int answer, QuestionLevel level, Genre genre) {
+        Objects.requireNonNull(option0);
+        Objects.requireNonNull(option1);
+        Objects.requireNonNull(option2);
+        Objects.requireNonNull(option3);
         QuizQuestion quest = new QuizQuestion();
         quest.setQuestion(question);
         quest.setOptions( List.of( option0, option1, option2, option3) );
+        quest.setAnswer(answer);
+        quest.setLevel(level);
+        quest.setGenre(genre);
+        return quest;
+    }
+
+    public static QuizQuestion create(String question, String option0, String option1, String option2, int answer, QuestionLevel level, Genre genre) {
+        Objects.requireNonNull(option0);
+        Objects.requireNonNull(option1);
+        Objects.requireNonNull(option2);
+        QuizQuestion quest = new QuizQuestion();
+        quest.setQuestion(question);
+        quest.setOptions( List.of( option0, option1, option2) );
+        quest.setAnswer(answer);
+        quest.setLevel(level);
+        quest.setGenre(genre);
+        return quest;
+    }
+
+    public static QuizQuestion create(String question, String option0, String option1, int answer, QuestionLevel level, Genre genre) {
+        Objects.requireNonNull(option0);
+        Objects.requireNonNull(option1);
+        QuizQuestion quest = new QuizQuestion();
+        quest.setQuestion(question);
+        quest.setOptions( List.of( option0, option1) );
         quest.setAnswer(answer);
         quest.setLevel(level);
         quest.setGenre(genre);
@@ -95,9 +129,42 @@ public class QuizQuestion {
      */
     public static QuizQuestion create(String question, String option0, String option1, String option2, String option3, int answer,
                                       QuestionLevel level, Genre genre, String explanation) {
+        Objects.requireNonNull(option0);
+        Objects.requireNonNull(option1);
+        Objects.requireNonNull(option2);
+        Objects.requireNonNull(option3);
         QuizQuestion quest = new QuizQuestion();
         quest.setQuestion(question);
         quest.setOptions( List.of( option0, option1, option2, option3) );
+        quest.setAnswer(answer);
+        quest.setLevel(level);
+        quest.setGenre(genre);
+        quest.setAnswerExplanation(explanation);
+        return quest;
+    }
+
+    public static QuizQuestion create(String question, String option0, String option1, String option2, int answer,
+                                      QuestionLevel level, Genre genre, String explanation) {
+        Objects.requireNonNull(option0);
+        Objects.requireNonNull(option1);
+        Objects.requireNonNull(option2);
+        QuizQuestion quest = new QuizQuestion();
+        quest.setQuestion(question);
+        quest.setOptions( List.of( option0, option1, option2) );
+        quest.setAnswer(answer);
+        quest.setLevel(level);
+        quest.setGenre(genre);
+        quest.setAnswerExplanation(explanation);
+        return quest;
+    }
+
+    public static QuizQuestion create(String question, String option0, String option1, int answer,
+                                      QuestionLevel level, Genre genre, String explanation) {
+        Objects.requireNonNull(option0);
+        Objects.requireNonNull(option1);
+        QuizQuestion quest = new QuizQuestion();
+        quest.setQuestion(question);
+        quest.setOptions( List.of( option0, option1) );
         quest.setAnswer(answer);
         quest.setLevel(level);
         quest.setGenre(genre);

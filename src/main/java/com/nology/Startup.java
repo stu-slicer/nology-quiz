@@ -7,9 +7,14 @@ import java.io.IOException;
 public class Startup {
 
     public static void main(String[] args) throws IOException {
-        QuestionLoader loader = new BasicQuestionLoader();
+
+        // create both implementations of QuestionLoader
+        QuestionLoader basicLoader = new BasicQuestionLoader();
+        QuestionLoader fileLoader = new CSVQuestionLoader("src/main/resources/questions.csv");
         ScoreCalculator calculator = new ScoreCalculator();
-        GameCreator gameCreator = new GameCreator( loader, calculator );
+
+        // use the appropriate loader.
+        GameCreator gameCreator = new GameCreator( fileLoader, calculator );
 
         System.out.println(FigletFont.convertOneLine("Nology Quiz!"));
 

@@ -3,6 +3,10 @@ package com.nology;
 import java.time.Instant;
 import java.util.Scanner;
 
+/**
+ * Controller class for playing the game.
+ * Handles creating a new game, displaying questions, get answers and displaying the results.
+ */
 public class Controller {
 
     private GameCreator gameCreator;
@@ -12,8 +16,6 @@ public class Controller {
     }
 
     public void play() {
-
-        // capture player's name
 
         // start new game
         QuizGame quizGame = gameCreator.create();
@@ -86,6 +88,11 @@ public class Controller {
         System.out.printf("Score: %d, total: %d\n\n", lastScore, score);
     }
 
+    /**
+     * Display the final results.
+     * @param quizGame
+     * @param quit
+     */
     private void displayFinalResults(QuizGame quizGame, boolean quit) {
         System.out.printf("Final Score: %d\n", quizGame.getScore());
         // TODO - BUG!!!
@@ -149,6 +156,11 @@ public class Controller {
         }
     }
 
+    /**
+     * Display the question and options for a given round.
+     * @param quizQuestion
+     * @param round
+     */
     private void displayQuestion(QuizQuestion quizQuestion, int round) {
 
         System.out.printf("Question %s: %s\n", round, quizQuestion.getQuestion());

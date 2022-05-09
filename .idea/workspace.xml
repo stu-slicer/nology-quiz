@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/BasicQuestionLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/GameCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuestionLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuestionLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizQuestionList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/ScoreCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/Startup.java" afterDir="false" />
+    <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="Still adding basic functionality">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/questions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/BasicQuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/BasicQuestionLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/GameCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/GameCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/QuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuestionLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/QuizQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/Startup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +48,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nology" />
@@ -101,7 +97,20 @@
       <workItem from="1651217207927" duration="3095000" />
       <workItem from="1651252654089" duration="655000" />
       <workItem from="1651844362167" duration="11547000" />
+      <workItem from="1651858235226" duration="41000" />
+      <workItem from="1651942615105" duration="1178000" />
+      <workItem from="1652008917129" duration="474000" />
+      <workItem from="1652019383343" duration="1829000" />
+      <workItem from="1652080949847" duration="12828000" />
     </task>
+    <task id="LOCAL-00001" summary="Still adding basic functionality">
+      <created>1651858263078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651858263078</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,13 +127,22 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Still adding basic functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Still adding basic functionality" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="4" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
