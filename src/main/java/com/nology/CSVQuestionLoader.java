@@ -28,9 +28,9 @@ public class CSVQuestionLoader implements QuestionLoader {
                 }
                 try {
                     String[] tokens = line.trim().split(",");
-                    Genre genre =  Genre.valueOf(tokens[0]);
+                    Genre genre =  Genre.valueOf(tokens[0].toLowerCase());
                     String question = tokens[1];
-                    QuestionLevel level = QuestionLevel.valueOf(tokens[2]);
+                    QuestionLevel level = QuestionLevel.valueOf(tokens[2].toLowerCase());
                     String option0 = tokens[3];
                     String option1 = tokens[4];
                     String option2 = tokens[5];
