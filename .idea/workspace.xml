@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="Add a README.md file with the features.">
+    <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="Tweak the questions slighty.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/BasicQuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/BasicQuestionLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/questions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,7 @@
       <workItem from="1652019383343" duration="1829000" />
       <workItem from="1652080949847" duration="14161000" />
       <workItem from="1652169376581" duration="1187000" />
-      <workItem from="1652183878504" duration="3490000" />
+      <workItem from="1652183878504" duration="4841000" />
     </task>
     <task id="LOCAL-00001" summary="Still adding basic functionality">
       <created>1651858263078</created>
@@ -120,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652190007720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tweak the questions slighty.">
+      <created>1652190458005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652190458005</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +146,8 @@
     <MESSAGE value="Still adding basic functionality" />
     <MESSAGE value="Add in CSV file for questions and loader" />
     <MESSAGE value="Add a README.md file with the features." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a README.md file with the features." />
+    <MESSAGE value="Tweak the questions slighty." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweak the questions slighty." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

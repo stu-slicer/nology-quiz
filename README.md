@@ -12,7 +12,7 @@ at the end of the game. The player's response is also timed. and the faster thei
 an optional answer explanation which can offer more details about the answer.
 + A question has a difficulty - easy, medium and hard - the level can affect the score - the harder the question the
 higher the score.
-+ For each round the player is shown the next question and the four options, they enter their answer and the question is marked.
++ For each round the player is shown a question and the four options, they enter their answer and the question is marked.
 + If the player got the question correct then Correct is displayed, along with any answer explanation.
 + If the player got the question wrong then just Wrong is displayed.
 + The speed of the player's response is measured and this affects the scoring.
