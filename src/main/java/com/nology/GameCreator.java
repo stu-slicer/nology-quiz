@@ -29,7 +29,7 @@ public class GameCreator {
         List<QuizQuestion> forShuffling = new ArrayList<>( loader.loadQuestions() );
         Collections.shuffle( forShuffling );
 
-        questions.stream()
+        loader.loadQuestions().stream()
                 .limit(this.numQuestions)
                 .forEach(question -> questions.add( question ));
 

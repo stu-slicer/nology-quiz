@@ -7,9 +7,14 @@
     <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="Tidy up README.md">
       <change afterPath="$PROJECT_DIR$/src/Bugs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/GameCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/GameCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/ScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/ScoreCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/QuizQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nology" />
@@ -164,5 +169,16 @@
     <MESSAGE value="Tweak the questions slighty." />
     <MESSAGE value="Tidy up README.md" />
     <option name="LAST_COMMIT_MESSAGE" value="Tidy up README.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nology/GameCreator.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

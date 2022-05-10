@@ -30,12 +30,12 @@ public class CSVQuestionLoader implements QuestionLoader {
                     String[] tokens = line.trim().split(",");
                     Genre genre =  Genre.valueOf(tokens[0]);
                     String question = tokens[1];
-                    QuestionLevel level = QuestionLevel.valueOf(tokens[2]);
+                    QuestionLevel level = QuestionLevel.valueOf(tokens[2].toLowerCase());
                     String option0 = tokens[3];
                     String option1 = tokens[4];
                     String option2 = tokens[5];
                     String option3 = tokens[5];
-                    int answer = Integer.parseInt(tokens[7].toLowerCase());
+                    int answer = Integer.parseInt(tokens[7]);
                     String additionalInfo = null;
                     if( tokens.length > 8 ) {
                         additionalInfo = tokens[8];

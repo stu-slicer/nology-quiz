@@ -16,6 +16,7 @@ higher the score.
 + If the player got the question correct then Correct is displayed, along with any answer explanation.
 + If the player got the question wrong then just Wrong is displayed.
 + The speed of the player's response is measured and this affects the scoring.
++ The player can quit the game at any time by entering 'quit' or 'exit'.
 + At the end of the game the player's score is displayed and the time taken.
 + The score per question depends upon the level of difficulty and the speed of response from the player.
 

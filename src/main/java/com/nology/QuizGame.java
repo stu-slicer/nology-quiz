@@ -59,7 +59,7 @@ public class QuizGame {
     public void finishGame() {
         this.finishTime = LocalTime.now();
         Duration between = Duration.between(this.startTime, this.finishTime);
-        this.elapsedTimeSeconds = (int) between.getSeconds();
+        this.elapsedTimeSeconds = (int) between.toMillis();
     }
 
     /**
@@ -89,12 +89,11 @@ public class QuizGame {
      */
     public boolean markQuestion(QuizQuestion quizQuestion, int answer, int timeElapsedSeconds) {
         // don't forget to subtract one from answer
-        boolean correct = quizQuestion.markQuestion(answer - 1); // TODO BUG
-        if( correct ) {
-            correctAnswers++; // TODO bug correctAnswers+1
-        }
+        boolean correct = quizQuestion.markQuestion(answer);
+//        if( correct )
+            correctAnswers++;
         lastScore = scoreCalculator.calculateScore(correct, quizQuestion.getLevel(), timeElapsedSeconds);
-        score += lastScore;
+        score = lastScore;
         return correct;
     }
 

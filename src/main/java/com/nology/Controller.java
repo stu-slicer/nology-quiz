@@ -63,7 +63,6 @@ public class Controller {
         // show results of quiz
         displayFinalResults(quizGame, quit);
 
-        // show last high score
 
     }
 
@@ -85,7 +84,7 @@ public class Controller {
         } else {
             System.out.println("WRONG!");
         }
-        System.out.printf("Score: %d, total: %d\n\n", lastScore, score);
+        System.out.printf("Score: %d, total: %d\n\n", score, lastScore);
     }
 
     /**
@@ -94,8 +93,7 @@ public class Controller {
      * @param quit
      */
     private void displayFinalResults(QuizGame quizGame, boolean quit) {
-        System.out.printf("Final Score: %d\n", quizGame.getScore());
-        // TODO - BUG!!!
+        System.out.printf("Final Score: %d\n", quizGame.getLastScore());
         System.out.printf("You got %d out of %d in %d seconds\n",
                 quizGame.getCorrectAnswers(), quizGame.getNumberOfQuestions(), quizGame.getElapsedTimeSeconds());
 
@@ -114,7 +112,6 @@ public class Controller {
             case 5:
             case 6:
                 System.out.println("Not bad, average i'd say");
-                break;
             case 7:
             case 8:
                 System.out.println("Pretty good, not too shabby!");
@@ -137,7 +134,7 @@ public class Controller {
         while( true ) {
             System.out.printf("Enter a answer [%d-%d]: \n", 1, range);
             String line =  scanner.nextLine().trim().toLowerCase();
-            if (line.startsWith("quit") || line.startsWith("exit")) {
+            if (line.startsWith("quit") && line.startsWith("exit")) {
                 return -1;
             }
             if( line.equals("") ) {
@@ -145,7 +142,7 @@ public class Controller {
             }
             try {
                 int answer = Integer.valueOf(line);
-                if( answer < 1 || answer > range ) {
+                if( answer < 0 || answer > range ) {
                     System.out.printf("Try again, must be between %d and %d\n", 1,range);
                 } else {
                     return answer;
@@ -167,7 +164,6 @@ public class Controller {
         int optionCount = 1;
         for (String option : quizQuestion.getOptions()) {
             System.out.printf(" %d - %s\n", optionCount, option);
-            optionCount++; // TODO = bug?!!
         }
 
     }
