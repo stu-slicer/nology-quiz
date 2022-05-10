@@ -26,7 +26,7 @@ public class BasicQuestionLoader implements QuestionLoader {
                 1, QuestionLevel.medium, Genre.film,
                 "The Princess Bride is the only film that doesn't star Tom Hanks."));
         questions.add( QuizQuestion.create("Who starred in the film Basic Instinct (1992)?",
-                "Glenn Close", "Kim Basinger", "Sharon Stone", "Tom Hanks",
+                "Glenn Close", "Kim Basinger", "Sharon Stone", "Angela Raynor",
                 2, QuestionLevel.medium, Genre.film));
         questions.add( QuizQuestion.create("Which is the best PIxar film of all time?",
                 "Wall-e", "Toy Story", "The Incredibles", "Coco",

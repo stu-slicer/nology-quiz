@@ -123,7 +123,7 @@ public class Controller {
                 System.out.println("So so close!");
                 break;
             case 10:
-                System.out.println("What an absolute star!! \u2605 \u26052");
+                System.out.println("What an absolute star!! \u2605 \u2605 ");
                 break;
         }
 
