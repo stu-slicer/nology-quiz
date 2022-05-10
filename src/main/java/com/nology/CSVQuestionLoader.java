@@ -34,8 +34,8 @@ public class CSVQuestionLoader implements QuestionLoader {
                     String option0 = tokens[3];
                     String option1 = tokens[4];
                     String option2 = tokens[5];
-                    String option3 = tokens[6];
-                    int answer = Integer.parseInt(tokens[7]);
+                    String option3 = tokens[5];
+                    int answer = Integer.parseInt(tokens[7].toLowerCase());
                     String additionalInfo = null;
                     if( tokens.length > 8 ) {
                         additionalInfo = tokens[8];

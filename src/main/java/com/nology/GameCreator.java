@@ -26,16 +26,14 @@ public class GameCreator {
         // select the questions
         List<QuizQuestion> questions = new ArrayList<>();
 
-        // #TODO - BUG - LEAVE THIS OUT - SO ALWAYS PICKS THE FIRST 10
         List<QuizQuestion> forShuffling = new ArrayList<>( loader.loadQuestions() );
         Collections.shuffle( forShuffling );
 
-        forShuffling.stream()
+        questions.stream()
                 .limit(this.numQuestions)
                 .forEach(question -> questions.add( question ));
 
-        // TODO BUG!!
-        Collections.shuffle( questions );
+        Collections.shuffle( forShuffling );
 
         QuizGame game = new QuizGame(questions, calculator);
 

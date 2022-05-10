@@ -14,7 +14,7 @@ public class ScoreCalculator {
                         return 10;
                 }
 
-            } else if( seconds <= 10) {
+            } else if( seconds < 10) {
                 switch (level) {
                     case easy:
                         return 4;
@@ -30,8 +30,6 @@ public class ScoreCalculator {
                         return 2;
                     case medium:
                         return 4;
-                    case hard:
-                        return 6;
                 }
 
             } else {
@@ -46,7 +44,7 @@ public class ScoreCalculator {
             }
 
         }
-        return 0;
+        return -1;
     }
 
 }
