@@ -1,5 +1,7 @@
 package com.nology;
 
+import com.nology.annotations.Bug;
+
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.List;
@@ -56,6 +58,9 @@ public class QuizGame {
         this.startTime = LocalTime.now();
     }
 
+    @Bug(descr = {
+            "the duration of the game is in milliseconds and not seconds"
+    })
     public void finishGame() {
         this.finishTime = LocalTime.now();
         Duration between = Duration.between(this.startTime, this.finishTime);
@@ -87,6 +92,11 @@ public class QuizGame {
      * @param timeElapsedSeconds
      * @return
      */
+    @Bug(descr={
+            "1 is not subtracted from answer when calling markQuestion",
+            "the check for correct is commented out",
+            "lastScore overwrites score - rather than adding to it"
+    })
     public boolean markQuestion(QuizQuestion quizQuestion, int answer, int timeElapsedSeconds) {
         // don't forget to subtract one from answer
         boolean correct = quizQuestion.markQuestion(answer);

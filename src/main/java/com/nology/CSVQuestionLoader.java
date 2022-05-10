@@ -1,5 +1,7 @@
 package com.nology;
 
+import com.nology.annotations.Bug;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,6 +18,10 @@ public class CSVQuestionLoader implements QuestionLoader {
     }
 
     @Override
+    @Bug(descr = {
+            "the token for Genre is not converted to lowercase",
+            "String option3 is set to tokens[5] - should be tokens[6]"
+    })
     public List<QuizQuestion> loadQuestions() {
 
         List<QuizQuestion> questions = new ArrayList<>();

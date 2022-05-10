@@ -1,7 +1,13 @@
 package com.nology;
 
+import com.nology.annotations.Bug;
+
 public class ScoreCalculator {
 
+    @Bug(descr = {
+            "the expression to check for 10 seconds or less should use a <=, not just <",
+            "the switch statement for 15 seconds or less is missing the hard case"
+    })
     public int calculateScore(boolean correct, QuestionLevel level, int seconds) {
         if( correct ) {
             if (seconds <= 5) {

@@ -1,5 +1,7 @@
 package com.nology;
 
+import com.nology.annotations.Bug;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -126,6 +128,10 @@ public class QuizQuestion {
      * @param genre
      * @return
      */
+    @Bug(descr = {
+            "the List.of() has option0 and option1 the wrong way round",
+            "the answer for the quest object is never actually set"
+    })
     public static QuizQuestion create(String question, String option0, String option1, String option2, String option3, int answer,
                                       QuestionLevel level, Genre genre, String explanation) {
         Objects.requireNonNull(option0);

@@ -1,5 +1,7 @@
 package com.nology;
 
+import com.nology.annotations.Bug;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,6 +23,10 @@ public class GameCreator {
         this.calculator = calculator;
     }
 
+    @Bug(descr = {
+            "the forShuffling list is not actually used to limit and add to question list",
+            "the forShuffling list is shuffled rather than the questions list"
+    })
     public QuizGame create() {
 
         // select the questions
