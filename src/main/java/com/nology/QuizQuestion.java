@@ -84,6 +84,7 @@ public class QuizQuestion {
         QuizQuestion quest = new QuizQuestion();
         quest.setQuestion(question);
         quest.setOptions( List.of( option0, option1, option2, option3) );
+        quest.setAnswer(answer);
         quest.setLevel(level);
         quest.setGenre(genre);
         return quest;
@@ -134,8 +135,7 @@ public class QuizQuestion {
         Objects.requireNonNull(option3);
         QuizQuestion quest = new QuizQuestion();
         quest.setQuestion(question);
-        quest.setOptions( List.of( option1, option0, option2, option3) );
-        quest.setAnswer(answer);
+        quest.setOptions( List.of( option0, option1, option2, option3) );
         quest.setLevel(level);
         quest.setGenre(genre);
         quest.setAnswerExplanation(explanation);

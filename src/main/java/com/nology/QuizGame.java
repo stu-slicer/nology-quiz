@@ -90,7 +90,7 @@ public class QuizGame {
     public boolean markQuestion(QuizQuestion quizQuestion, int answer, int timeElapsedSeconds) {
         // don't forget to subtract one from answer
         boolean correct = quizQuestion.markQuestion(answer);
-//        if( correct )
+        if( correct )
             correctAnswers++;
         lastScore = scoreCalculator.calculateScore(correct, quizQuestion.getLevel(), timeElapsedSeconds);
         score = lastScore;

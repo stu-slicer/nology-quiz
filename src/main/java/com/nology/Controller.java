@@ -142,7 +142,7 @@ public class Controller {
             }
             try {
                 int answer = Integer.valueOf(line);
-                if( answer < 0 || answer > range ) {
+                if( answer < 1 || answer > range ) {
                     System.out.printf("Try again, must be between %d and %d\n", 1,range);
                 } else {
                     return answer;
