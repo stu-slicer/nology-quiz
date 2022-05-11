@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="Tweak the questions slighty.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/questions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,16 +148,5 @@
     <MESSAGE value="Add a README.md file with the features." />
     <MESSAGE value="Tweak the questions slighty." />
     <option name="LAST_COMMIT_MESSAGE" value="Tweak the questions slighty." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nology/CSVQuestionLoader.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
