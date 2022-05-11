@@ -94,13 +94,12 @@ public class QuizGame {
      */
     @Bug(descr={
             "1 is not subtracted from answer when calling markQuestion",
-            "the check for correct is commented out",
             "lastScore overwrites score - rather than adding to it"
     })
     public boolean markQuestion(QuizQuestion quizQuestion, int answer, int timeElapsedSeconds) {
         // don't forget to subtract one from answer
         boolean correct = quizQuestion.markQuestion(answer);
-//        if( correct )
+        if( correct )
             correctAnswers++;
         lastScore = scoreCalculator.calculateScore(correct, quizQuestion.getLevel(), timeElapsedSeconds);
         score = lastScore;

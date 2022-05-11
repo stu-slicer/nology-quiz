@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="Introduce the various bugs">
-      <change afterPath="$PROJECT_DIR$/src/Bugs.md" afterDir="false" />
+    <list default="true" id="0905b479-627f-493d-b0d6-26f34bfd3169" name="Changes" comment="Add Bug annotations to highlight bugs">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/annotations/Bug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/QuizGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bugs.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bugs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +104,7 @@
       <workItem from="1652080949847" duration="14161000" />
       <workItem from="1652169376581" duration="1187000" />
       <workItem from="1652183878504" duration="6527000" />
+      <workItem from="1652254211951" duration="951000" />
     </task>
     <task id="LOCAL-00001" summary="Still adding basic functionality">
       <created>1651858263078</created>
@@ -146,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652203030125</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Bug annotations to highlight bugs">
+      <created>1652204044742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652204044742</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,14 +179,15 @@
     <MESSAGE value="Tweak the questions slighty." />
     <MESSAGE value="Tidy up README.md" />
     <MESSAGE value="Introduce the various bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduce the various bugs" />
+    <MESSAGE value="Add Bug annotations to highlight bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Bug annotations to highlight bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nology/GameCreator.java</url>
-          <line>26</line>
+          <line>32</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

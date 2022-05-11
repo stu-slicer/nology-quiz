@@ -129,7 +129,6 @@ public class QuizQuestion {
      * @return
      */
     @Bug(descr = {
-            "the List.of() has option0 and option1 the wrong way round",
             "the answer for the quest object is never actually set"
     })
     public static QuizQuestion create(String question, String option0, String option1, String option2, String option3, int answer,
@@ -140,7 +139,7 @@ public class QuizQuestion {
         Objects.requireNonNull(option3);
         QuizQuestion quest = new QuizQuestion();
         quest.setQuestion(question);
-        quest.setOptions( List.of( option1, option0, option2, option3) );
+        quest.setOptions( List.of( option0, option1, option2, option3) );
         quest.setAnswer(answer);
         quest.setLevel(level);
         quest.setGenre(genre);

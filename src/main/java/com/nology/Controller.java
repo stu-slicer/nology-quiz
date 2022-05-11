@@ -1,5 +1,7 @@
 package com.nology;
 
+import com.nology.annotations.Bug;
+
 import java.time.Instant;
 import java.util.Scanner;
 
@@ -74,6 +76,9 @@ public class Controller {
      * @param lastScore
      * @param score
      */
+    @Bug(descr = {
+            "the score and total are in the wrong order"
+    })
     private void displayResults(QuizQuestion nextQuestion, boolean correct, int lastScore, int score) {
         if( correct ) {
             if( nextQuestion.getAnswerExplanation() != null && ! nextQuestion.getAnswerExplanation().equals("") ) {
@@ -92,6 +97,10 @@ public class Controller {
      * @param quizGame
      * @param quit
      */
+    @Bug(descr = {
+            "the score output uses the getLastScore() instead of getScore()",
+            "there's a missing break statement, causing 4,5,6 to run into 7,8"
+    })
     private void displayFinalResults(QuizGame quizGame, boolean quit) {
         System.out.printf("Final Score: %d\n", quizGame.getLastScore());
         System.out.printf("You got %d out of %d in %d seconds\n",
@@ -128,6 +137,9 @@ public class Controller {
 
     }
 
+    @Bug(descr = {
+            "game can never be quit because check uses && instead of ||"
+    })
     private int getAnswer(int range) {
         Scanner scanner = new Scanner(System.in);
 
@@ -142,7 +154,7 @@ public class Controller {
             }
             try {
                 int answer = Integer.valueOf(line);
-                if( answer < 0 || answer > range ) {
+                if( answer < 1 || answer > range ) {
                     System.out.printf("Try again, must be between %d and %d\n", 1,range);
                 } else {
                     return answer;
@@ -158,6 +170,9 @@ public class Controller {
      * @param quizQuestion
      * @param round
      */
+    @Bug(descr = {
+            "the optionCount variable is never incremented, meaning each option has the same number"
+    })
     private void displayQuestion(QuizQuestion quizQuestion, int round) {
 
         System.out.printf("Question %s: %s\n", round, quizQuestion.getQuestion());
