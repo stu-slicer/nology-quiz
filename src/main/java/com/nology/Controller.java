@@ -95,7 +95,6 @@ public class Controller {
      */
     private void displayFinalResults(QuizGame quizGame, boolean quit) {
         System.out.printf("Final Score: %d\n", quizGame.getScore());
-        // TODO - BUG!!!
         System.out.printf("You got %d out of %d in %d seconds\n",
                 quizGame.getCorrectAnswers(), quizGame.getNumberOfQuestions(), quizGame.getElapsedTimeSeconds());
 
@@ -167,7 +166,7 @@ public class Controller {
         int optionCount = 1;
         for (String option : quizQuestion.getOptions()) {
             System.out.printf(" %d - %s\n", optionCount, option);
-            optionCount++; // TODO = bug?!!
+            optionCount++;
         }
 
     }

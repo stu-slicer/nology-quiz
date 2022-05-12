@@ -89,9 +89,9 @@ public class QuizGame {
      */
     public boolean markQuestion(QuizQuestion quizQuestion, int answer, int timeElapsedSeconds) {
         // don't forget to subtract one from answer
-        boolean correct = quizQuestion.markQuestion(answer - 1); // TODO BUG
+        boolean correct = quizQuestion.markQuestion(answer - 1);
         if( correct ) {
-            correctAnswers++; // TODO bug correctAnswers+1
+            correctAnswers++;
         }
         lastScore = scoreCalculator.calculateScore(correct, quizQuestion.getLevel(), timeElapsedSeconds);
         score += lastScore;

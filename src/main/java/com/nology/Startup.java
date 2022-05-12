@@ -14,11 +14,12 @@ public class Startup {
         ScoreCalculator calculator = new ScoreCalculator();
 
         // use the appropriate loader.
-        GameCreator gameCreator = new GameCreator( fileLoader, calculator );
+        GameCreator gameCreator = new GameCreator( basicLoader, calculator );
 
         System.out.println(FigletFont.convertOneLine("Nology Quiz!"));
 
-        System.out.println("\nWelcome to the show... \n\n");
+        System.out.println("Welcome to the show... \n\n");
+        System.out.println("Enter 'quit' or 'exit' to stop.\n");
 
         Controller controller = new Controller(gameCreator);
         controller.play();

@@ -8,8 +8,9 @@ at the end of the game. The player's response is also timed. and the faster thei
 ## Features
 
 + The quiz game consists of 10 questions.
-+ All questions are multiple choice with up to 4 options and have a genre or category, for example film. There is also 
-an optional answer explanation which can offer more details about the answer.
++ All questions are multiple choice with up to 4 options 
++ A question has a genre or category, for example film. 
++ A question may have an answer explanation which can offer more details about the answer.
 + A question has a difficulty - easy, medium and hard - the level can affect the score - the harder the question the
 higher the score.
 + For each round the player is shown a question and the four options, they enter their answer and the question is marked.
