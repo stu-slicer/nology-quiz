@@ -36,3 +36,21 @@ higher the score.
 `film,Who directed the film Alien (1979)?,medium,Ridley Scott,Steven Speilberg,John Carpenter,Tony Scott,0,`
 
 + There is also a set of hardcoded questions, which are loaded via `basicQuestionLoader`.
+
+
+## Known problems
+
+These are some of the problems discovered whilst attempting to play the game, there could be more.
+
+1. When a question is displayed the options are all numbered 1, making it difficult to choose the right answer.
+2. There are more than 10 questions in the file/basic loader however it always displays the same 10 questions.
+3. You should be able to finish the game by typing 'quit' or 'exit', however this is ignored.
+4. Sometimes the last two options are identical, not sure why.
+5. The questions always appear in the same order, they should change on every run.
+6. The time the game takes appears to be way to high, it's supposed to be seconds.
+7. Some of the answer's don't appear to be correct, for example Tim Burton definitely directed Beetlejuice.
+8. The total score doesn't appear to be increasing as you play.
+9. Something is not quite right with the scoring for hard questions, especially if the user's response is around the 15 second mark - appear to lose a point!
+10. There are various warning messages when loading questions from the CSV file, something dodgy is going on.
+11. Not sure if the total score and last score are showing correctly.
+12. If the player does average they get two comments - "Not bad, average i'd say" and "Pretty good, not too shabby!" - doesn't feel right.
