@@ -58,13 +58,10 @@ public class QuizGame {
         this.startTime = LocalTime.now();
     }
 
-    @Bug(descr = {
-            "the duration of the game is in milliseconds and not seconds"
-    })
     public void finishGame() {
         this.finishTime = LocalTime.now();
         Duration between = Duration.between(this.startTime, this.finishTime);
-        this.elapsedTimeSeconds = (int) between.toMillis();
+        this.elapsedTimeSeconds = (int) between.getSeconds();
     }
 
     /**

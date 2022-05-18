@@ -98,7 +98,6 @@ public class Controller {
      * @param quit
      */
     @Bug(descr = {
-            "the score output uses the getLastScore() instead of getScore()",
             "there's a missing break statement, causing 4,5,6 to run into 7,8"
     })
     private void displayFinalResults(QuizGame quizGame, boolean quit) {
