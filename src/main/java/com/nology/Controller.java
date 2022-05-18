@@ -93,7 +93,7 @@ public class Controller {
      * @param quit
      */
     private void displayFinalResults(QuizGame quizGame, boolean quit) {
-        System.out.printf("Final Score: %d\n", quizGame.getLastScore());
+        System.out.printf("Final Score: %d\n", quizGame.getScore());
         System.out.printf("You got %d out of %d in %d seconds\n",
                 quizGame.getCorrectAnswers(), quizGame.getNumberOfQuestions(), quizGame.getElapsedTimeSeconds());
 

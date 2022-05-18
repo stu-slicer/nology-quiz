@@ -59,7 +59,7 @@ public class QuizGame {
     public void finishGame() {
         this.finishTime = LocalTime.now();
         Duration between = Duration.between(this.startTime, this.finishTime);
-        this.elapsedTimeSeconds = (int) between.toMillis();
+        this.elapsedTimeSeconds = (int) between.getSeconds();
     }
 
     /**
